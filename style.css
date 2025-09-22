@@ -10,18 +10,21 @@
 */
 .module {
     border-radius: 10px;
+    background-color: #45475a;
+    margin-bottom: 3px;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
+    background-color: #1e1e2e;
+    border-bottom: 1px solid rgba(100, 114, 125, 0.5);
+    color: #cdd6f4;
+    margin-bottom: 5px;
     transition-property: background-color;
     transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 /*
@@ -58,7 +61,7 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: #f9e1e0;
 }
 
 #workspaces button {
@@ -72,8 +75,8 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #64727d;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: #6c7086;
+    box-shadow: inset 0 -3px #cdd6f4;
 }
 
 #workspaces button.urgent {
@@ -109,6 +112,10 @@ button:hover {
 #window,
 #workspaces {
     margin: 0 4px;
+    background-color: #45475a;
+}
+
+#mode {
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -123,23 +130,19 @@ button:hover {
 
 #clock {
     color: #b2ebe0;
-    background-color: #3c3947;
 }
 
 #battery {
     color: #acefac;
-    background-color: #3c3947;
 }
 
 #battery.charging,
 #battery.plugged {
     color: #70ae98;
-    background-color: #3c3947;
 }
 
 #battery.warning {
     color: #ecad8f;
-    background-color: #3c3947;
 }
 
 @keyframes blink {
@@ -151,7 +154,6 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #3c3947;
     color: #e58;
     animation-name: blink;
     animation-duration: 0.5s;
@@ -185,37 +187,30 @@ label:focus {
 
 #cpu {
     color: #8ec9bb;
-    background-color: #3c3947;
 }
 
 #memory {
     color: #d3c0f9;
-    background-color: #3c3947;
 }
 
 #backlight {
     color: #fed7d7;
-    background-color: #3c3947;
 }
 
 #network {
     color: #9c8ade;
-    background-color: #3c3947;
 }
 
 #network.disconnected {
     color: #a02c2d;
-    background-color: #3c3947;
 }
 
 #pulseaudio {
     color: #d7e7a9;
-    background-color: #3c3947;
 }
 
 #pulseaudio.muted {
     color: #f99a9c;
-    background-color: #3c3947;
 }
 
 #wireplumber {
@@ -242,7 +237,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #3c3947;
+    background-color: #45475a;
 }
 
 #tray > .passive {
@@ -254,13 +249,8 @@ label:focus {
     background-color: #eb4d4b;
 }
 
-#idle_inhibitor {
-    background-color: #3c3947;
-}
-
 #idle_inhibitor.activated {
     background-color: #e6dce5;
-    color: #3c3947;
 }
 
 #mpd {
