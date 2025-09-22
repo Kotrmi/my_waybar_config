@@ -122,18 +122,24 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727d;
+    color: #b2ebe0;
+    background-color: #3c3947;
 }
 
 #battery {
-    background-color: #000000;
-    color: #ffffff;
+    color: #acefac;
+    background-color: #3c3947;
 }
 
 #battery.charging,
 #battery.plugged {
-    color: #000000;
-    background-color: #26a65b;
+    color: #70ae98;
+    background-color: #3c3947;
+}
+
+#battery.warning {
+    color: #ecad8f;
+    background-color: #3c3947;
 }
 
 @keyframes blink {
@@ -145,8 +151,8 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    background-color: #3c3947;
+    color: #e58;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -174,42 +180,42 @@ button:hover {
 }
 
 label:focus {
-    background-color: #000000;
+    background-color: #3c3947;
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    color: #8ec9bb;
+    background-color: #3c3947;
 }
 
 #memory {
-    background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #964b00;
+    color: #d3c0f9;
+    background-color: #3c3947;
 }
 
 #backlight {
-    background-color: #90b1b1;
+    color: #fed7d7;
+    background-color: #3c3947;
 }
 
 #network {
-    background-color: #2980b9;
+    color: #9c8ade;
+    background-color: #3c3947;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    color: #a02c2d;
+    background-color: #3c3947;
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    color: #d7e7a9;
+    background-color: #3c3947;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    color: #f99a9c;
+    background-color: #3c3947;
 }
 
 #wireplumber {
@@ -236,7 +242,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #3c3947;
 }
 
 #tray > .passive {
@@ -249,12 +255,12 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: #3c3947;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: #e6dce5;
+    color: #3c3947;
 }
 
 #mpd {
