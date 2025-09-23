@@ -120,6 +120,7 @@ button:hover {
 #window,
 #workspaces {
     margin: 0 4px;
+    margin-bottom: 3px;
     background-color: #45475a;
 }
 
